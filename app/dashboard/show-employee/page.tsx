@@ -9,10 +9,6 @@ import { useRouter } from "next/navigation"; // Use next/navigation
 const ShowEmployee = () => {
   const [employees, setEmployees] = useState([]);
   const router = useRouter();
-
-  const AddEmployee = () => {
-    router.push('/dashboard/add-employee'); // Navigates to the Add Employee page
-  };
   const editEmployee = (id) => {
     // Navigate to the edit employee page with the employee ID as a parameter
     router.push(`/dashboard/edit-employee?id=${id}`);
@@ -21,7 +17,7 @@ const ShowEmployee = () => {
     const fetchData = async () => {
       try {
         const response = await fetch("/api/show_employees", { cache: "no-cache" });
-        var result = await response.json();
+        const result = await response.json();
         if (Array.isArray(result) && Array.isArray(result[0])) {
             setEmployees(result[0]); // Set the rows as the state
             // console.log("Extracted Rows:", result[0]);

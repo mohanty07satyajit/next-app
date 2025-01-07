@@ -1,4 +1,6 @@
 // /pages/api/get_employee/[id].js
+// Remove or use the 'error' variable
+const error = someErrorHandlingFunction();
 export default async function handler(req, res) {
     const { id } = req.query; // Dynamic route parameter
     if (req.method === 'GET') {
