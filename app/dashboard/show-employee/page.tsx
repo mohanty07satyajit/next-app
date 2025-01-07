@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import AddEmployee from "../add-employee/page";
 import Link from 'next/link';
 // import { useRouter } from 'next/router';
 import { useRouter } from "next/navigation"; // Use next/navigation
