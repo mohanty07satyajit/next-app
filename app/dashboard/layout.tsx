@@ -1,4 +1,3 @@
-// app/layout.tsx
 import { ReactNode } from 'react';
 
 interface LayoutProps {
