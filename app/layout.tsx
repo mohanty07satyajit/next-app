@@ -15,6 +15,6 @@ export default function RootLayout({ children }: LayoutProps) {
   );
 }
 // Named export for Layout
-export function Template({ children }: { children: React.ReactNode }) {
-  return <div>{children}</div>
-}
+// export function Template({ children }: { children: React.ReactNode }) {
+//   return <div>{children}</div>
+// }
