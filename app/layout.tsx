@@ -1,5 +1,3 @@
-// app/layout.tsx
-// import './globals.css'; // Import global CSS if needed
 import { ReactNode } from 'react';
 
 interface LayoutProps {
