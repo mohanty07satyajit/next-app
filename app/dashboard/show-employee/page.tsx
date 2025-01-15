@@ -52,7 +52,7 @@ return (
         </thead>
         <tbody>
           {employees.length > 0 ? (
-            employees.map((employee:any) => (
+            employees.map((employee) => (
               <tr key={employee?.id}>
                 <td>{employee?.id}</td>
                 <td>{employee?.name}</td>
