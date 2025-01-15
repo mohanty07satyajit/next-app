@@ -52,13 +52,13 @@ return (
         </thead>
         <tbody>
           {employees.length > 0 ? (
-            employees.map((employee) => (
-              <tr key={employee.id}>
-                <td>{employee.id}</td>
-                <td>{employee.name}</td>
-                <td>{employee.email}</td>
-                <td>{employee.phone}</td>
-                <td>{employee.department}</td>
+            employees.map((employee:any) => (
+              <tr key={employee?.id}>
+                <td>{employee?.id}</td>
+                <td>{employee?.name}</td>
+                <td>{employee?.email}</td>
+                <td>{employee?.phone}</td>
+                <td>{employee?.department}</td>
                 <td>
                   <button onClick={() => alert(`Details of ${employee.name}`)}>
                     View

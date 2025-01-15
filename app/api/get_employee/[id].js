@@ -8,7 +8,9 @@ export default async function handler(req, res) {
         const employee = { id, name: "John Doe", email: "john@example.com", phone: "1234567890", department: "HR" };
         res.status(200).json(employee);
       } catch (error) {
+       if(error){
         res.status(500).json();
+       }
       }
     } else {
       res.setHeader('Allow', ['GET']);

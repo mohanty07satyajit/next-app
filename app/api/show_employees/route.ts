@@ -13,7 +13,7 @@ export async function GET() {
   try {
     const query = `
      SELECT * FROM employees;`;
-    const values = [""];
+    // const values = [""];
 
   const [rows] = await db.execute(query);
   return NextResponse.json([rows]);
