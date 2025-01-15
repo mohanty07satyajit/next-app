@@ -1,14 +1,17 @@
-export default function DashboardLayout({
-    children, // will be a page or nested layout
-  }: {
-    children: React.ReactNode
-  }) {
-    return (
-      <section>
-        {/* Include shared UI here e.g. a header or sidebar */}
-        <nav></nav>
-   
+// app/layout.tsx
+import { ReactNode } from 'react';
+
+interface LayoutProps {
+  children: ReactNode;
+}
+
+export default function RootLayout({ children }: LayoutProps) {
+  return (
+    <html lang="en">
+      <body>
+        {/* Add any layout-level components here */}
         {children}
-      </section>
-    )
-  }
+      </body>
+    </html>
+  );
+}
